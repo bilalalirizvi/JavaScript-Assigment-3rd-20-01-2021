@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Number 4</title>
+</head>
+
+<body>
+
+    <script>
+
+        // Question Number 4
+
+        var colourNames = ["Red", "Green", "Blue", "Black", "White"];
+
+        console.log(colourNames);
+
+
+        // Question Number 4 (a)
+
+        var colourTakenFromUser = prompt(" " + colourNames + "\n Enter colour name you want add in the START !");
+
+        colourNames.unshift(colourTakenFromUser)
+        alert(colourNames);
+
+
+        // Question Number 4 (b)
+
+        colourTakenFromUser = prompt(" " + colourNames + "\n Enter colour name you want add in the END !");
+
+        colourNames.push(colourTakenFromUser);
+        alert(colourNames);
+
+
+        // Question Number 4 (c)
+
+        var colour1 = prompt(" Two more colour add in the START ! \n Enter First Colour");
+        var colour2 = prompt(" Enter Second Colour");
+
+        colourNames.unshift(colour1, colour2);
+        alert(colourNames);
+
+
+        // Question Number 4 (d)
+
+        colourTakenFromUser = prompt(" " + colourNames + "\n Enter 1 to delete first colour", "1");
+        colourNames.shift(colourTakenFromUser);
+        alert(colourNames);
+
+
+        // Question Number 4 (e)
+
+        colourTakenFromUser = prompt(" " + colourNames + "\n Enter 1 to delete Last colour", "1");
+        colourNames.pop(colourTakenFromUser);
+        alert(colourNames);
+
+
+        // Question Number 4 (f)
+
+        var indexNumber = prompt(" " + colourNames + "\n Which index you want to add a colour ", "1");
+        var noDelete = 0;
+        var addColourInIndex = prompt("Colour Name");
+
+        colourNames.splice(indexNumber, noDelete, addColourInIndex);
+
+        alert(colourNames);
+
+
+        // Question Number 4 (g)
+
+        var indexNumberToDelete = prompt(" " + colourNames + "\n Which index you want to delete colour's", "1");
+        var howManyColoursDelete = prompt(" " + colourNames + "\n How many colours you want to Delete", "2")
+
+        colourNames.splice(indexNumberToDelete, howManyColoursDelete);
+
+        alert(colourNames);
+
+
+    </script>
+
+    <header>
+        <div class="headerBanner">
+            <h2>JavaScript Assigment # 3 | <small>20/01/2021</small></h2>
+            <h5>Student Name: Muhammad Bilal Qadri</h5>
+            <h5>Batch: EX-MS11 Intermediate</h5>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a class="active" href="../index.html">&#60; Back to Home</a></li>
+                <li><a href="#code">Code</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section>
+
+        <h3>Question Number 4</h3>
+        <p>Initialize an array with color names (Array length should be 5). Log that array in your console</p>
+        <b>HINT: push, pop, shift, unshift, splice</b>
+        <ol type="a" class="childOrderList2">
+            <li>Ask the user what color he/she wants to add to the beginning & add that color to the beginning
+                of the array. Display the updated array values in your browser using Alert (All the values
+                should be listed)
+            </li>
+            <li>Ask the user what color he/she wants to add to the end & add that color to the end of the array.
+                Display the updated array in your browser using Alert (All the values should be listed)
+            </li>
+            <li>Add two more color to the beginning of the array. Display the updated array in your browser
+                using Alert (All the values should be listed)</li>
+            <li>Delete the first color in the array. Display the updated array in your browser using Alert (All
+                the values should be listed)</li>
+            <li>Delete the last color in the array. Display the updated array in your browser using Alert (All
+                the values should be listed)</li>
+            <li>Ask the user at which index he/she wants to add a color & color name. Then add the color to
+                desired position/index. Display the updated array in your browser using Alert (All the values
+                should be listed)</li>
+            <li>Ask the user at which index he/she wants to delete color(s) & how many colors he/she wants to
+                delete. Then remove the same number of color(s) from user-defined position/index. . Display the
+                updated array in your browser using Alert (All the values should be listed)</li>
+        </ol> <br> <br>
+        
+        <h1 style="text-align: center; padding: 20px; scroll-behavior: smooth;" id="code">Code</h1> 
+        
+        <br><br>
+        <pre>
+            // Question Number 4
+
+            var colourNames = ["Red", "Green", "Blue", "Black", "White"];
+
+            console.log(colourNames);
+
+
+            // Question Number 4 (a)
+
+            var colourTakenFromUser = prompt(" " + colourNames + "\n Enter colour name you want add in the START !");
+
+            colourNames.unshift(colourTakenFromUser)
+            alert(colourNames);
+
+
+            // Question Number 4 (b)
+
+            colourTakenFromUser = prompt(" " + colourNames + "\n Enter colour name you want add in the END !");
+
+            colourNames.push(colourTakenFromUser);
+            alert(colourNames);
+
+
+            // Question Number 4 (c)
+
+            var colour1 = prompt(" Two more colour add in the START ! \n Enter First Colour");
+            var colour2 = prompt(" Enter Second Colour");
+
+            colourNames.unshift(colour1, colour2);
+            alert(colourNames);
+
+
+            // Question Number 4 (d)
+
+            colourTakenFromUser = prompt(" " + colourNames + "\n Enter 1 to delete first colour", "1");
+            colourNames.shift(colourTakenFromUser);
+            alert(colourNames);
+
+
+            // Question Number 4 (e)
+
+            colourTakenFromUser = prompt(" " + colourNames + "\n Enter 1 to delete Last colour", "1");
+            colourNames.pop(colourTakenFromUser);
+            alert(colourNames);
+
+
+            // Question Number 4 (f)
+
+            var indexNumber = prompt(" " + colourNames + "\n Which index you want to add a colour ", "1")       ;
+            var noDelete = 0;
+            var addColourInIndex = prompt("Colour Name");
+
+            colourNames.splice(indexNumber, noDelete, addColourInIndex);
+
+            alert(colourNames);
+
+
+            // Question Number 4 (g)
+
+            var indexNumberToDelete = prompt(" " + colourNames + "\n Which index you want to delete colour's", "1");
+            var howManyColoursDelete = prompt(" " + colourNames + "\n How many colours you want to Delete", "2")
+
+            colourNames.splice(indexNumberToDelete, howManyColoursDelete);
+
+            alert(colourNames);
+        </pre>
+
+    </section>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Header Start */
+        .headerBanner {
+            width: 100%;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .headerBanner h5 {
+            margin-top: 5px;
+        }
+
+        .navbar {
+            width: 100%;
+            background-color: blue;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar ul li {
+            display: inline-block;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            width: 200px;
+            display: block;
+            padding: 15px;
+            font-size: 17px;
+        }
+
+        .navbar a:hover {
+            background-color: white;
+            color: blue;
+            transition: 0.6s;
+            border-radius: 5px;
+        }
+
+        .navbar a.active {
+            background-color: white;
+            color: blue;
+            border-radius: 5px;
+            border: 1px solid blue;
+        }
+
+        /* Header End */
+
+        section {
+            padding: 50px;
+        }
+
+        ol {
+            margin-top: 20px;
+        }
+
+        ol li {
+            margin-top: 20px;
+            margin-left: 19px;
+        }
+    </style>
+
+</body>
+
+</html>
